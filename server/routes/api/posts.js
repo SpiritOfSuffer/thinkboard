@@ -8,7 +8,7 @@ const router = express.Router();
 // @access  Public
 router.get('/', async (req, res) => {
     const posts = await loadPosts();
-    res.send(await posts.find({}).toArray());
+    res.send(await posts.find().sort({createdAt: -1}).toArray());
 });
 
 // @route   POST api/posts
