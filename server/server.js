@@ -19,6 +19,17 @@ app.use('/api/posts', posts);
 //Creating a server, which listen the defined port
 app.listen(port, () => console.log(`Server is up on port ${port}`));
 
+var a = 0;
+if (a == '') {
+  console.log('winning');
+}
+
+setTimeout(() => {
+    console.log("123");
+}, 1000);
+
+
+
 
 
 
